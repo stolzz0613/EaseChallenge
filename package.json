@@ -1,0 +1,11 @@
+{
+  "name": "easechallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "challenge.js",
+  "scripts": {
+    "start": "node './main.js'"
+  },
+  "author": "",
+  "license": "ISC"
+}
