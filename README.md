@@ -12,7 +12,7 @@ Your challenge is to write a program to find the longest (and then steepest) pat
 
 
 ## Table of Contents
-* [Prerequisites](#pre-requisites)
+* [Prerequisites](#prerequisites)
 * [Back-End](#back-end)
 * [Installing](#installing)
 
@@ -47,4 +47,9 @@ The program will automatically read a file named 'map.txt' in the 'grids' direct
 ```
   manageFile.read('map.txt', grid => checkGrid(grid))
 ```
+![image](https://user-images.githubusercontent.com/67411628/212946438-44eabfd0-ba79-4ff1-b4ba-3460a714bbe0.png)
+
 - If we want to update the .json file that is used in the frontend, We can uncomment the last lines in main.js, please be careful with this functionality, it could be really heavy to process in the front-end, it is recommended to use with small input grids.
+
+![image](https://user-images.githubusercontent.com/67411628/212946300-797e2909-53bf-4a69-abef-1fe42bfc9cee.png)
+
