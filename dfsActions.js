@@ -9,7 +9,8 @@ const yMovement = [1, 0, -1, 0];
  * @param {number} currentNode - The current node.
  * @param {Array} dimensions - The dimensions of the grid in the form of [columns, rows].
  * @param {Object} results - An object containing the results of the path inspection.
- * @param {Array} Fpath - The current path being inspected.
+ * @param {string} number - The current path being inspected.
+ * @param {Array} coords - An array with the coordinates of the current path
  * @returns {Object} - An object containing the results of the path inspection.
  */
 
@@ -45,6 +46,7 @@ const inspectBranch = (x, y, length, currentNode, dimensions, results, numbers, 
   }
 
   results.path.push(coords);
+  results.pathNumbers.push(`${numbers}`)
   return results;
 }
 

@@ -6,7 +6,7 @@ const fs = require('fs')
  * Main function that reads a file and calls the checkGrid function.
  * @param {string} file - The name of the file to read.
 */
-manageFile.read('4x4.txt', grid => checkGrid(grid))
+manageFile.read('map.txt', grid => checkGrid(grid))
 
 /**
  * Function that finds the longest path in a grid with the highest drop.
@@ -19,6 +19,7 @@ const checkGrid = (grid) => {
     maxLength: 0,
     maxDrop: 0,
     path: [],
+    pathNumbers: [],
     coords: [],
     numbers: []
   }
@@ -37,13 +38,10 @@ const checkGrid = (grid) => {
   console.log(`Steepness: ${results.maxDrop}`);
   console.log(`Length: ${results.maxLength}`);
 
-  // Write the results to JSON files (Just for testing and visualization)
-  /**
-    let data = JSON.stringify(results.path);
-    let answer = JSON.stringify(results.maxPath);
-    let gridJSON = JSON.stringify(results.grid);
+  // Write the results to JSON files
+  //(Just for testing and visualization, if you give me the chance I will show you it in the interview)
+  /*
+    let data = JSON.stringify(results);
     fs.writeFileSync(__dirname + '/front-challenge/results.json', data);
-    fs.writeFileSync(__dirname + '/front-challenge/grid.json', gridJSON);
-    fs.writeFileSync(__dirname + '/front-challenge/answer.json', answer);
   */
 }
